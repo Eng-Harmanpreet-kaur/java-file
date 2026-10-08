@@ -1,0 +1,23 @@
+class Student {
+
+    String name;
+    int marks;
+
+    Student(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+
+    void displayStudent() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Student Marks: " + marks);
+    }
+
+    public static void main(String[] args) {
+
+        Student student = null;
+
+        // This line will cause NullPointerException
+        student.displayStudent();
+    }
+}
